@@ -34,12 +34,17 @@ public class BoxBugRunner
         ActorWorld world = new ActorWorld(new UnboundedGrid());
       //  BoxBug alice = new BoxBug(3);
       //  alice.setColor(Color.ORANGE);
-        CircleBug bob = new CircleBug(3);
+      //  CircleBug bob = new CircleBug(3);
+          ZBug jake = new ZBug(2);
        // world.add(new Location(7, 8), alice);
-        world.add(new Location(5, 5), bob);
+       // world.add(new Location(5, 5), bob);
+        world.add(new Location(5, 5), jake);
 
-   //     bob.act();
+        for (int i = 0; i < 9; i++) {
 
+        jake.act();
+
+        }
         world.show();
 
     }
