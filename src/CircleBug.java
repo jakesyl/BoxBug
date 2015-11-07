@@ -45,6 +45,7 @@ public class CircleBug extends Bug
     {
         /*Makes bug goes spiral
         * */
+        if(canMove()){
         if(steps<sideLength){
             move();
             steps++;
@@ -53,6 +54,10 @@ public class CircleBug extends Bug
             turn();
             sideLength++;
             steps=0;
+        }
+
+        } else{
+            turn();
         }
     }
 } 
