@@ -38,14 +38,13 @@ public class BoxBugRunner
           ZBug jake = new ZBug(2);
        // world.add(new Location(7, 8), alice);
        // world.add(new Location(5, 5), bob);
-        world.add(new Location(5, 5), jake);
+      //  world.add(new Location(5, 5), jake);
 
-        for (int i = 0; i < 9; i++) {
+       int[] arr =new int[] {1, 5, 2 , 3};
 
-        jake.act();
-
-        }
-        world.show();
+       DancingBug peter = new DancingBug(arr);
+       world.add(new Location(5, 5), peter);
+       world.show();
 
     }
 }
